@@ -1,6 +1,8 @@
 "use client";
+
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
+  Button,
   Form,
   FormControl,
   FormField,
@@ -74,13 +76,17 @@ export default function UserLoginForm(): JSX.Element {
                 </FormItem>
               )}
             />
-            <button
+            {/* <button
               className="text-md bg-indigo hover:bg-indigoLight flex w-full items-center justify-center rounded py-2 transition-colors duration-150 ease-in-out"
               type="submit"
             >
               Continue
               <Icons.ChevronRight className="ml-1 h-4 w-4" />
-            </button>
+            </button> */}
+            <Button type="submit" className="text-md w-full rounded-md">
+              Continue
+              <Icons.ChevronRight className="ml-1 h-4 w-4" />
+            </Button>
           </form>
         </Form>
       </div>
